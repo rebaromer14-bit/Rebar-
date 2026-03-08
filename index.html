@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ku">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پلاتفۆرمی فڕۆشتنی ئەکادیمیکی کوردی</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>پلاتفۆرمی فڕۆشتن</h1>
+        <nav>
+            <ul>
+                <li><a href="#registration">پەیوەندیدانی فرۆشیار</a></li>
+                <li><a href="#products">بەرهەمەکان</a></li>
+                <li><a href="#wishlist">خوازیارێکی گەورە</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="registration">
+            <h2>پەیوەندیدانی فرۆشیار</h2>
+            <form>
+                <label for="shopName">ناوی کەنتاکت</label>
+                <input type="text" id="shopName" required>
+                <label for="shopEmail">ئیمەیل</label>
+                <input type="email" id="shopEmail" required>
+                <input type="submit" value="پەیوەندیدانی ف��ۆشیار">
+            </form>
+        </section>
+        <section id="products">
+            <h2>بەرهەمەکان</h2>
+            <form>
+                <label for="productTitle">ناوی بەرهەم</label>
+                <input type="text" id="productTitle" required>
+                <label for="productImages">وێنەکان (هەتا 6 وێنه)</label>
+                <input type="file" id="productImages" accept="image/*" multiple required>
+                <label for="colorSelect">رەنگ</label>
+                <select id="colorSelect">
+                    <option value="red">Sor</option>
+                    <option value="blue">Şîn</option>
+                    <option value="green">Kesraw</option>
+                </select>
+                <label for="sizeSelect">قەبارە</label>
+                <select id="sizeSelect">
+                    <option value="s">گەورە</option>
+                    <option value="m">نیمە چەند</option>
+                    <option value="l">گەورە</option>
+                </select>
+                <label for="stockManagement">بەرهەمە تایبەتی هەبێت:</label>
+                <input type="number" id="stockManagement" required>
+                <input type="submit" value="ناردنی بەرهەم">
+            </form>
+        </section>
+        <section id="wishlist">
+            <h2>خوازیارێکی گەورە</h2>
+            <ul id="wishlistItems"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>پاراستنی شتەکان | زانیاریدان: 2026-03-08</p>
+    </footer>
+</body>
+</html>
